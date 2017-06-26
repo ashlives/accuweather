@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="City1Test">
+        <parameter name="city" value="Mumbai"/>
+        <classes>
+            <class name="tests.AccuweatherTest">
+                <methods>
+                    <include name="testDayTemp"/>
+                    <include name="testNightTemp"/>
+                    <include name="testWeatherIcon"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="City2Test">
+        <parameter name="city" value="Pune"/>
+        <classes>
+            <class name="tests.AccuweatherTest">
+                <methods>
+                    <include name="testDayTemp"/>
+                    <include name="testNightTemp"/>
+                    <include name="testWeatherIcon"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="City3Test">
+        <parameter name="city" value="Aurangabad"/>
+        <classes>
+            <class name="tests.AccuweatherTest">
+                <methods>
+                    <include name="testDayTemp"/>
+                    <include name="testNightTemp"/>
+                    <include name="testWeatherIcon"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
